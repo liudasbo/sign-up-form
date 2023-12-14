@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Sign Up</title>
+</head>
+<body>
+    <main>
+        <div class="sign-up-container">
+            <div class="sign-up-header">
+                <h1>Sign up</h1>
+                <p>Please signup to continue</p>
+            </div>
+            <form action="/server-end-point" method="post">
+                <div class="sign-up-inputs">
+                    <div class="sign-up-input">
+                        <p class="error"></p>
+                        <label for="name">Name</label>
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            required
+                            placeholder="Name">
+                    </div>
+                    <div class="sign-up-input">
+                        <p class="error"></p>
+                        <label for="email">Email Address</label>
+                        <input
+                            autocomplete="off"
+                            id="email"
+                            name="email"
+                            type="email"
+                            required
+                            placeholder="Email Address">
+                    </div>
+                    <div class="sign-up-input">
+                        <p class="error"></p>
+                        <label for="password">Password</label>
+                        <input 
+                            id="password"
+                            name="password"
+                            type="password"
+                            required
+                            placeholder="Password">
+                    </div>
+                    <div class="sign-up-input">
+                        <p class="error"></p>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input 
+                            id="confirmPassword"
+                            name="Confirm Password"
+                            type="password"
+                            required
+                            placeholder="Confirm Password">
+                    </div>
+                </div>
+                <p>By signing up, you are agreeing to our <a href="">Terms & Conditions</a> and <a href="">Privacy Policy</a></p>
+                <button class="btn-sign-up">Sign Up</button>
+                <p>Already a member? <a href="#">Sign In</a></p>
+            </form>
+        </div>
+        <div class="ilustration-container">
+            <img src="assets/Mobile login-bro.svg" alt="mobile login bro">
+            <p class="p--white">Already have an account?</p>
+            <button class="btn-sign-in">Sign In</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
